@@ -1,5 +1,9 @@
 import { useState, useContext } from 'react';
+
 import { Container, Nav, Navbar, Button, Dropdown } from 'react-bootstrap';
+
+import { FaArrowRight } from "react-icons/fa6";
+
 import { NavLink } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { AuthContext } from '../../Context/AuthContext';
@@ -43,7 +47,7 @@ function Navigation() {
 
                     <Navbar.Collapse id="navbar-content">
                         <Nav className="mx-auto">
-                            <Nav.Link as={NavLink} to="/Home" className="nav-item-modern" end>
+                            <Nav.Link as={NavLink} to="/" className="nav-item-modern" end>
                                 Home
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/about" className="nav-item-modern">
@@ -74,7 +78,9 @@ function Navigation() {
                             {!user ? (
                                 <Button onClick={handleShowModal} className="login-btn-modern">
                                     Login / Register
-                                    <span className="arrow-icon">→</span>
+                                    <span className="arrow-icon">
+                                        <FaArrowRight className='rounded-4'/>
+                                    </span>
                                 </Button>
                             ) : (
                                 <div className='d-flex gap-2 align-items-center'>

@@ -51,7 +51,7 @@ function CarouselFadeExample() {
             <Carousel.Item>
                 <img
                     className="d-block w-100 p-3 carousel-media"
-                    src="https://images.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg"
+                    src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg"
                     alt="Mountain landscape"
                     style={{ height: '600px', objectFit: 'cover', borderRadius: '50px' }}
                 />

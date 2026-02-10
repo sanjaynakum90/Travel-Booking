@@ -9,6 +9,9 @@ import BookingDetails from "./components/Pages/BookingDetails";
 import ErrorElement from "./components/Pages/ErrorElement";
 import LoadingPage from "./components/Pages/LoadingPage";
 import ProtectedRoute from "./Context/ProtectedRouts";
+import About from "./components/Pages/About";
+import Services from "./components/Pages/Service";
+import Contact from "./components/Pages/Contact";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -23,12 +26,15 @@ const App = () => {
         },
         {
           path: "about",
-          element: (
-            <div className="container py-5">
-              <h1>About Us</h1>
-              <p>Welcome to Trvelo - Your trusted travel partner!</p>
-            </div>
-          )
+          element: <About />
+        },
+        {
+          path: "services",
+          element: <Services />
+        },
+        {
+          path: "contact",
+          element: <Contact />
         },
         {
           path: "tour",
