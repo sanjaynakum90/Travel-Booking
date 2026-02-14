@@ -105,40 +105,6 @@ src
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/your-username/react-travel-booking.git
-cd react-travel-booking
-```
-
-### 2️⃣ Install dependencies
-
-```bash
-npm install
-```
-
-### 3️⃣ Setup Firebase
-
-Create a Firebase project and enable **Email/Password Authentication**
-
-Then create a `.env` file in the root:
-
-```
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
-```
-
-Update `src/Firebase/config.js` if necessary.
-
----
-
 ## 🧠 What I Learned
 
 * Managing authentication using React Context
